@@ -313,7 +313,7 @@ export function AboutSection() {
       </div>
 
       {/* Stats row - centered, large numbers, no color dots */}
-      <div className="px-6 md:px-12 pb-10 md:pb-20">
+      <div className="px-6 md:px-12 pb-6 md:pb-12">
         <AnimatedLine />
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-10 sm:gap-px pt-10 sm:pt-16 pb-4">
           {stats.map((stat, i) => (
