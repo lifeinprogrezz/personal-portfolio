@@ -268,14 +268,9 @@ export function AboutSection() {
               <p className="text-xs tracking-widest text-muted-foreground mb-4">
                 {translations.about.sectionLabel[language]}
               </p>
-              <h2 className="text-4xl md:text-5xl font-medium text-foreground leading-tight tracking-tight text-balance max-w-2xl">
-                {translations.about.heading.prefix[language]}
-                <span style={{ color: "#5EEAD4" }}>{translations.about.heading.products[language]}</span>
-                {translations.about.heading.from[language]}
-                <span style={{ color: "#818CF8" }}>{translations.about.heading.zero[language]}</span>
-                {translations.about.heading.to[language]}
-                <span style={{ color: "#D946EF" }}>{translations.about.heading.one[language]}</span>
-              </h2>
+          <h2 className="text-4xl md:text-5xl font-medium text-foreground leading-tight tracking-tight text-balance max-w-2xl">
+            {translations.about.heading.title[language]}
+          </h2>
             </div>
             <p className="text-xs tracking-wider text-muted-foreground mt-2 hidden lg:block">
               05

@@ -12,12 +12,10 @@ export const translations = {
   about: {
     sectionLabel: { en: "ABOUT", es: "SOBRE M\u00CD" },
     heading: {
-      prefix: { en: "architecting ", es: "arquitectando " },
-      products: { en: "products", es: "productos" },
-      from: { en: " from ", es: " de " },
-      zero: { en: "zero", es: "cero" },
-      to: { en: " to ", es: " a " },
-      one: { en: "one", es: "uno" },
+      title: {
+        en: "building fintech products people actually use",
+        es: "creando productos fintech que la gente realmente usa",
+      },
     },
     bio1: {
       en: "Originally from Galicia and now based in Barcelona, I spent my career in the trenches of early-stage startups. I am finishing an MBA at",
