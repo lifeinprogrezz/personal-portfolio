@@ -23,7 +23,7 @@ export const projects: Project[] = [
   {
     id: "kintai",
     title: "Kintai",
-    location: "Product Owner",
+    location: "PRODUCT OWNER",
     year: "2026",
     productType: "Working-Capital Credit Line",
     description: "work in progress!",
