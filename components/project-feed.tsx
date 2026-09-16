@@ -81,18 +81,24 @@ function ExpandedRightContent({ project, animationComplete }: { project: Project
         animate={{ opacity: animationComplete ? 1 : 0, y: animationComplete ? 0 : 8 }}
         transition={{ duration: 0.4, ease: [0.16, 1, 0.3, 1], delay: 0.15 }}
       >
-        <Link
-          href={`/projects/${project.caseStudySlug}`}
-          onClick={(e) => {
-            e.stopPropagation()
-            try {
-              sessionStorage.setItem("portfolio-scroll-y", String(window.scrollY))
-            } catch {}
-          }}
-          className="block w-full text-center py-2.5 text-xs tracking-wider text-background bg-foreground hover:opacity-80 transition-opacity cursor-pointer mb-5"
-        >
-          {translations.projectFeed.fullCaseStudy[language]}
-        </Link>
+        {project.hasFullCaseStudy === false ? (
+          <div className="block w-full text-center py-2.5 text-xs tracking-wider text-background bg-foreground mb-5">
+            No Full Case Study Yet
+          </div>
+        ) : (
+          <Link
+            href={`/projects/${project.caseStudySlug}`}
+            onClick={(e) => {
+              e.stopPropagation()
+              try {
+                sessionStorage.setItem("portfolio-scroll-y", String(window.scrollY))
+              } catch {}
+            }}
+            className="block w-full text-center py-2.5 text-xs tracking-wider text-background bg-foreground hover:opacity-80 transition-opacity cursor-pointer mb-5"
+          >
+            {translations.projectFeed.fullCaseStudy[language]}
+          </Link>
+        )}
       </motion.div>
 
       {/* Stats with separator lines */}
@@ -169,18 +175,24 @@ function MobileExpandedContent({ project, animationComplete }: { project: Projec
           animate={{ opacity: animationComplete ? 1 : 0, y: animationComplete ? 0 : 6 }}
           transition={{ duration: 0.3, delay: 0.15 }}
         >
-          <Link
-            href={`/projects/${project.caseStudySlug}`}
-            onClick={(e) => {
-              e.stopPropagation()
-              try {
-                sessionStorage.setItem("portfolio-scroll-y", String(window.scrollY))
-              } catch {}
-            }}
-            className="block w-full text-center py-3 text-xs tracking-wider text-background bg-foreground hover:opacity-80 transition-opacity cursor-pointer mb-4"
-          >
-            {translations.projectFeed.fullCaseStudy[language]}
-          </Link>
+          {project.hasFullCaseStudy === false ? (
+            <div className="block w-full text-center py-3 text-xs tracking-wider text-background bg-foreground mb-4">
+              No Full Case Study Yet
+            </div>
+          ) : (
+            <Link
+              href={`/projects/${project.caseStudySlug}`}
+              onClick={(e) => {
+                e.stopPropagation()
+                try {
+                  sessionStorage.setItem("portfolio-scroll-y", String(window.scrollY))
+                } catch {}
+              }}
+              className="block w-full text-center py-3 text-xs tracking-wider text-background bg-foreground hover:opacity-80 transition-opacity cursor-pointer mb-4"
+            >
+              {translations.projectFeed.fullCaseStudy[language]}
+            </Link>
+          )}
         </motion.div>
 
         {/* Stats */}
