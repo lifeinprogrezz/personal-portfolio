@@ -342,27 +342,6 @@ export function AboutSection() {
         </div>
       </div>
 
-      {/* How I Work / Approach */}
-      <div className="px-6 md:px-12 pb-2">
-        <AnimatedLine />
-        <FadeInSection className="pt-10 pb-2">
-          <p className="text-xs tracking-widest text-muted-foreground">
-            {translations.about.howIWork[language]}
-          </p>
-        </FadeInSection>
-        <div>
-          {approach.map((item, i) => (
-            <ApproachCard
-              key={i}
-              item={item}
-              index={i}
-              title={translations.about.approach[item.index].title[language]}
-              description={translations.about.approach[item.index].description[language]}
-            />
-          ))}
-        </div>
-      </div>
-
       {/* SoundCloud Widget */}
       <div className="px-6 md:px-12 pb-16">
         <FadeInSection>
