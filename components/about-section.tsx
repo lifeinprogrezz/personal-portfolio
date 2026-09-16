@@ -269,7 +269,12 @@ export function AboutSection() {
                 {translations.about.sectionLabel[language]}
               </p>
           <h2 className="text-4xl md:text-5xl font-medium text-foreground leading-tight tracking-tight text-balance max-w-2xl">
-            {translations.about.heading.title[language]}
+            {translations.about.heading.prefix[language]}
+            <span style={{ color: "#5EEAD4" }}>{translations.about.heading.accentOne[language]}</span>
+            {translations.about.heading.middle[language]}
+            <span style={{ color: "#818CF8" }}>{translations.about.heading.accentTwo[language]}</span>
+            {translations.about.heading.suffix[language]}
+            <span style={{ color: "#D946EF" }}>{translations.about.heading.accentThree[language]}</span>
           </h2>
             </div>
             <p className="text-xs tracking-wider text-muted-foreground mt-2 hidden lg:block">
