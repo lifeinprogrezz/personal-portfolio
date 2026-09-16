@@ -16,7 +16,7 @@ export const viewport: Viewport = {
 }
 
 export const metadata: Metadata = {
-  title: 'building fintech products people actually use',
+  title: 'Roberto Quintero',
   description: 'Roberto Quintero — building fintech products people actually use.',
   generator: 'v0.app',
   icons: {
