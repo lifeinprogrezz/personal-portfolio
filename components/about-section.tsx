@@ -8,7 +8,6 @@ import { useLanguage } from "@/lib/language-context"
 import { translations } from "@/lib/translations"
 
 const aboutPhotos = [
-  { src: "/images/roberto-1.jpg", position: "center 30%", captionKey: "SCHOOL SHOOTING" as const },
   { src: "/images/roberto-4.jpeg", position: "center center", captionKey: "SPRING AT BARCELONA" as const },
   { src: "/images/roberto-3.jpeg", position: "center center", captionKey: "CIES ISLANDS" as const },
   { src: "/images/roberto-2.jpeg", position: "center 85%", captionKey: "RANDOM SELFIE" as const },
@@ -269,14 +268,14 @@ export function AboutSection() {
               <p className="text-xs tracking-widest text-muted-foreground mb-4">
                 {translations.about.sectionLabel[language]}
               </p>
-              <h2 className="text-4xl md:text-5xl font-medium text-foreground leading-tight tracking-tight text-balance max-w-2xl">
-                {translations.about.heading.prefix[language]}
-                <span style={{ color: "#5EEAD4" }}>{translations.about.heading.products[language]}</span>
-                {translations.about.heading.from[language]}
-                <span style={{ color: "#818CF8" }}>{translations.about.heading.zero[language]}</span>
-                {translations.about.heading.to[language]}
-                <span style={{ color: "#D946EF" }}>{translations.about.heading.one[language]}</span>
-              </h2>
+          <h2 className="text-4xl md:text-5xl font-medium text-foreground leading-tight tracking-tight text-balance max-w-2xl">
+            {translations.about.heading.prefix[language]}
+            <span style={{ color: "#5EEAD4" }}>{translations.about.heading.accentOne[language]}</span>
+            {translations.about.heading.middle[language]}
+            <span style={{ color: "#818CF8" }}>{translations.about.heading.accentTwo[language]}</span>
+            {translations.about.heading.suffix[language]}
+            <span style={{ color: "#D946EF" }}>{translations.about.heading.accentThree[language]}</span>
+          </h2>
             </div>
             <p className="text-xs tracking-wider text-muted-foreground mt-2 hidden lg:block">
               05
@@ -314,7 +313,7 @@ export function AboutSection() {
       </div>
 
       {/* Stats row - centered, large numbers, no color dots */}
-      <div className="px-6 md:px-12 pb-10 md:pb-20">
+      <div className="px-6 md:px-12 pb-6 md:pb-12">
         <AnimatedLine />
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-10 sm:gap-px pt-10 sm:pt-16 pb-4">
           {stats.map((stat, i) => (
@@ -343,30 +342,10 @@ export function AboutSection() {
         </div>
       </div>
 
-      {/* How I Work / Approach */}
-      <div className="px-6 md:px-12 pb-2">
-        <AnimatedLine />
-        <FadeInSection className="pt-10 pb-2">
-          <p className="text-xs tracking-widest text-muted-foreground">
-            {translations.about.howIWork[language]}
-          </p>
-        </FadeInSection>
-        <div>
-          {approach.map((item, i) => (
-            <ApproachCard
-              key={i}
-              item={item}
-              index={i}
-              title={translations.about.approach[item.index].title[language]}
-              description={translations.about.approach[item.index].description[language]}
-            />
-          ))}
-        </div>
-      </div>
-
       {/* SoundCloud Widget */}
       <div className="px-6 md:px-12 pb-16">
-        <FadeInSection>
+        <AnimatedLine />
+        <FadeInSection className="pt-10">
           <div className="mb-8">
             <p className="text-xs tracking-widest text-muted-foreground mb-4">
               {translations.about.nowPlaying[language]}
