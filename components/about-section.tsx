@@ -344,7 +344,8 @@ export function AboutSection() {
 
       {/* SoundCloud Widget */}
       <div className="px-6 md:px-12 pb-16">
-        <FadeInSection>
+        <AnimatedLine />
+        <FadeInSection className="pt-10">
           <div className="mb-8">
             <p className="text-xs tracking-widest text-muted-foreground mb-4">
               {translations.about.nowPlaying[language]}
