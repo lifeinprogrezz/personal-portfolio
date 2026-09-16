@@ -23,9 +23,9 @@ export const projects: Project[] = [
   {
     id: "kintai",
     title: "Kintai",
-    location: "FOUNDER",
+    location: "Product Owner",
     year: "2026",
-    productType: "Working-capital credit line",
+    productType: "Working-Capital Credit Line",
     description: "work in progress!",
     brandColor: "#6f4fff",
     logo: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/kintai-icon-500-violet-sLqLQkP3AiFOYTCatBZoeqpK9zjVey.png",
