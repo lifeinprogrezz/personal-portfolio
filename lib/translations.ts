@@ -19,16 +19,16 @@ export const translations = {
       suffix: { en: " actually ", es: " realmente " },
       accentThree: { en: "use", es: "usa" },
     },
-    bio1: {
-      en: "Originally from Galicia and now based in Barcelona, I spent my career in the trenches of early-stage startups. I am finishing an MBA at",
-      es: "Originario de Galicia y actualmente en Barcelona, he desarrollado mi carrera en las trincheras de startups en fase inicial. Estoy terminando un MBA en",
-    },
-    bio1End: {
-      en: "to gain a broader perspective of the market and formally structure the skills I instinctively developed during my first years as a founder.",
-      es: "para obtener una perspectiva m\u00E1s amplia del mercado y estructurar formalmente las habilidades que desarroll\u00E9 instintivamente durante mis primeros a\u00F1os como fundador.",
-    },
-    bio2: {
-      en: "For me, building great products requires an absolute obsession with progress. I have lived through massive market shifts and scaled global teams under intense pressure. Through all of that volatility, my core driver has always been a deep sense of movement.",
+  bio1: {
+    en: "Originally from Galicia and now based in Barcelona, I spent my first years in the trenches of early-stage startups as a founder. An MBA at",
+    es: "Originario de Galicia y actualmente en Barcelona, he desarrollado mi carrera en las trincheras de startups en fase inicial. Estoy terminando un MBA en",
+  },
+  bio1End: {
+    en: "gave me the market view and structure behind skills I built by instinct. Today I bring both to fintech, where the next chapter is being written.",
+    es: "para obtener una perspectiva más amplia del mercado y estructurar formalmente las habilidades que desarrollé instintivamente durante mis primeros años como fundador.",
+  },
+  bio2: {
+    en: "For me, building great products requires an absolute obsession with progress. I have lived through massive market shifts and scaled global teams under intense pressure. Through all of that volatility, my core driver has always been the same: keep things moving forward.",
       es: "Para m\u00ED, construir grandes productos requiere una obsesi\u00F3n absoluta con el progreso. He vivido cambios masivos de mercado y escalado equipos globales bajo una presi\u00F3n intensa. A trav\u00E9s de toda esa volatilidad, mi motor principal siempre ha sido un profundo sentido del movimiento.",
     },
     bio3: {
