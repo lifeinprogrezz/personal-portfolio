@@ -8,7 +8,6 @@ import { useLanguage } from "@/lib/language-context"
 import { translations } from "@/lib/translations"
 
 const aboutPhotos = [
-  { src: "/images/roberto-1.jpg", position: "center 30%", captionKey: "SCHOOL SHOOTING" as const },
   { src: "/images/roberto-4.jpeg", position: "center center", captionKey: "SPRING AT BARCELONA" as const },
   { src: "/images/roberto-3.jpeg", position: "center center", captionKey: "CIES ISLANDS" as const },
   { src: "/images/roberto-2.jpeg", position: "center 85%", captionKey: "RANDOM SELFIE" as const },
